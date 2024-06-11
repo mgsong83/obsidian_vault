@@ -51,7 +51,7 @@ y = linear(x)
 하지만 이렇게 클래스를 만들어도 실제로는 사용이 불가능하다. 
 왜냐하면 파라메터 등록이 안되어있기 때문, 이를 확인해보기 위해서 아래와 같이 확인해보면 아무것도 출력이 되지 않는다. 
 
-객체 이름 *linear*를 바로 부르면 알아서 forward가 실행된다. (정확히는 forward를 포함한 여러 hook이 같이 돌아간다. 앞단 뒷단에 여러 옵션들
+객체 이름 *linear*를 바로 부르면 알아서 forward가 실행된다. (정확히는 forward를 포함한 여러 hook이 같이 돌아간다. 앞단 뒷단에 여러 옵션들이 붙긴함)
 
 
 
@@ -87,11 +87,20 @@ class MyLinear(nn.Module):
 요렇게 학습이 되는 파라메터로 등록이 된다. 
 
 
+### nn.Linear 를 사용 하는 방법 ###
+
+
 하지만 이렇게 수작업으로 Linear Layer를 구현하는 건 몹시 비효율적이므로, 이왕이면 미리 만들어진 Layer를 사용하면 된다.
 
 
+```python
+linear = nn.Linear(3,2)
+y = linear(x)
+```
 
 
+또 nn.Module 를 상속 받아서  사용할 때 다른 nn.Module  을 넣을 수 있다.  
+이 경우에는 보통 module 의 `__init__`  부분에 sub layer 들을 정의하고, 
 
 
 
