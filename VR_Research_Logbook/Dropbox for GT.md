@@ -12,3 +12,9 @@ GA Tech 계정으로 가입할 경우 무제한 용량을 준다. (단, VR 기�
 
 gatech.edu 로 끝나는 이메일 주소로 가입이 되며, 혹시 문제가 있어서 gatech.edu 로 끝나는 메일로 가입을 했음에도 여전히 2GByte 용량 제한이 있다면 다음 링크에서 수동으로 GT 계정으로 편입을 신청할 수 있다.
 
+용량 증설 신청 (GT Dropbox 편입 신청)
+[https://gatech.service-now.com/home?id=kb_article_view&sysparm_article=KB0040320](https://gatech.service-now.com/home?id=kb_article_view&sysparm_article=KB0040320)
+
+데이터 Migration 방법
+[https://gatech.service-now.com/home?id=kb_article_view&sysparm_article=KB0027041](https://gatech.service-now.com/home?id=kb_article_view&sysparm_article=KB0027041)
+
