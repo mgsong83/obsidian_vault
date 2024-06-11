@@ -34,3 +34,30 @@ def mse(y_hat, y):
 	return ((y_hat - y)**2).mean()
 ```
 
+
+Predefine 된 함수/객체를 사용하기
+
+함수 사용 방법
+
+```python
+import torch.nn.functional as F
+
+F.mse_loss(y_hat, y) 
+
+F.mse_loss(y_hat, y, reduction = 'sum')  # 평균이 아닌 최종 합
+
+F.mse_loss(y_hat, y, reduction = 'none') # element wise로 계산이 되서 나옴.
+
+```
+
+객체를 사용하는 방법
+
+```python
+import torch.nn as nn
+
+mse_loss = nn.MSELoss()
+mse_loss(y_hat, y)
+
+```
+
+
