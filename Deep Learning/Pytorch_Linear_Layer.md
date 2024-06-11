@@ -23,6 +23,8 @@ W, b 는 학습이 되어야 하는 parameter 인데 따로 등록이 되어있�
 
 ### nn.Module 에서 상속 받는 방법 ###
 
+통상 pytorch 에서는 신경망을 직접 구현하기보다는 torch.nn 으로 부터 상속 받아서 이 중에 init과 forward 두 개만 수정해서 사용하는 경우가 많음. 
+
 ```python
 import torch.nn as nn
 
@@ -30,5 +32,22 @@ class MyLinear(nn.Module):
 	def __init__(self, input_dim=3, output_dim=2):
 		self.input_dim = input_dim
 		self.output_dim = output_dim
-		super().
+		super().__init__()
+
+		self.W = torch.FloatTensor(input_dim, output_dim)
+		self.b = torch.FloatTensor(output_dim)
+
+	def forward(self, x):
+		y = torch.matmul(x, self.W) + self.b
+		return y
+
 ```
+
+이렇게 클래스를 만들고
+
+```python
+linear = MyLinear(3, 2) #input, output dim 
+y = linear(x)
+```
+
+하지만 이렇게 클래스를 만들어도 실제로는 사용이 불가능하다. 
