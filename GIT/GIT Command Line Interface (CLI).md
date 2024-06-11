@@ -50,9 +50,9 @@
 `git reset HEAD^` 이렇게 하면 mixed reset 임
 
 
-mixed reset -> 커밋한 변경사항이 다시 unstaging area로 돌아감. (파일은 수정되었으나 반영하지는 않는 상태)
+mixed reset -> 커밋 한 변경사항이 다시 unstaging area로 돌아감. (파일은 수정되었으나 반영하지는 않는 상태)
 
-hard reset -> 파일자체를 수정(삭제) -> 그 당시 상태로 완전히 돌아감.
+hard reset -> 파일 자체를 수정(삭제) -> 그 당시 상태로 완전히 돌아감.
 
 
 reset을 해서 origin  과 local 이 다른 경우 
