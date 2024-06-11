@@ -100,7 +100,7 @@ y = linear(x)
 
 
 또 nn.Module 를 상속 받아서  사용할 때 다른 nn.Module  을 넣을 수 있다.  
-이 경우에는 보통 module 의 `__init__`  부분에 sub layer 들을 정의하고, 
+이 경우에는 보통 module 의 `__init__`  부분에 sub layer 들을 정의하고, forward 부분에서 이들이 어떻게 통과하는지를 정의한다. 
 
 
 

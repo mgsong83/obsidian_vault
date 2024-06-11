@@ -1,3 +1,6 @@
 
 
-[[Pytorch_Linear_Layer|Linear Layer]]
+[[Pytorch Linear Layer]]
+
+
+[[Pytorch GPU 사용 방법]]
