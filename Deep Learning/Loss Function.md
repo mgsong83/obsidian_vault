@@ -35,7 +35,7 @@ def mse(y_hat, y):
 ```
 
 
-Predefine 된 함수/객체를 사용하기
+### Predefine 된 함수/객체를 사용하기
 
 함수 사용 방법
 
@@ -45,10 +45,12 @@ import torch.nn.functional as F
 F.mse_loss(y_hat, y) 
 
 F.mse_loss(y_hat, y, reduction = 'sum')  # 평균이 아닌 최종 합
-
 F.mse_loss(y_hat, y, reduction = 'none') # element wise로 계산이 되서 나옴.
 
 ```
+
+reduction의 경우 최종적으로 계산된 lose들의 값을 1개의 값, 즉 스칼라로 환산해주는 방법이기 때문에 기본적으로는 mean 이 사용되지만, 원한다면 총합, 또는 아예 scalar로 합치지 않은 값을 받을 수 도 있다. 
+
 
 객체를 사용하는 방법
 
