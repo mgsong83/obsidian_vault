@@ -8,6 +8,5 @@ Fork 한 뒤에 내가 고치는 동안 Base repository 가 업데이트 된다�
 --> upstream 과 local branch 를 fetch 함으로써 동기화 가능 (merge)
 
 
-
 [[git app]]
 
