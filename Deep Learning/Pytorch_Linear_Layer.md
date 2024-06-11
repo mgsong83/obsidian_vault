@@ -30,5 +30,5 @@ class MyLinear(nn.Module):
 	def __init__(self, input_dim=3, output_dim=2):
 		self.input_dim = input_dim
 		self.output_dim = output_dim
-		super
+		super().
 ```
