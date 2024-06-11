@@ -14,10 +14,28 @@ GPU 에 Tensor를 생성하는 방법
 
 GPU의 경우 처음부터 cuda:0 ~ cuda:7 과 같이 일련번호를 받음.
 
-1) torch.cuda 를 사용해서 지정
+1) torch.cuda 를 사용해서 GPU를 지정해서 생성
 
-`torch.cuda.FloatTensor(2, 2)`
-
-
+`torch.FloatTensor` -> `torch.cuda.FloatTensor(2, 2)`
 
 
+2) 또는 일반적으로 생성한 다음에 GPU로 이동시키기
+
+```python
+x = torch.FloatTensor(2,2)
+x.cuda()
+```
+
+3) device 를 지정해서 이동시키기
+
+``` python
+dev = torch.device('cuda:0')
+x.cuda(device=dev)
+```
+
+단 여기서 편의상 이동이라고 표현했지만, 기본적으로는 모든 애들이 복사가 됨.
+따라서, 위 명령어를 실행시켜도 `x.device` 를 찍어보면 type = cpu 로 나옴을 확인 할 수 있다.
+
+
+4) to 를 사용해서 이동시키기
+5)
