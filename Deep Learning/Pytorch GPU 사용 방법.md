@@ -52,6 +52,8 @@ x.to(device=dev)
 ### model 자체를 move 하는 방법
 
 
+ Tensor 와 같이 모델자체도 CPU/GPU간 이동이 가능하다. 방법도 같다.
+ 
 ```python
 linear = nn.Linear(2,2)
 linear.cuda()
@@ -62,4 +64,16 @@ linear.cuda()
 ```python
 linear.to(dev)
 ```
-``
+
+`to`   를 사용해도 옮길 수 있다. 
+
+다만 모델을 상속받은 객체는 `linear.device` 등으로 확인이 불가능하다. 그 안에 있는 파라메터의 위치만 확인 가능하다. 따라서 굳이 확인하고 싶다면
+
+```python
+p = next(model.parameters()) 
+p.device 
+```
+
+와 같은 방법으로 간접적으로 확인할 수 있다. 
+
+
