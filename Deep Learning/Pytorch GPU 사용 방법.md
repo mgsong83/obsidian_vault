@@ -10,7 +10,8 @@ Tensor 의 **위치**가 중요함
 
 ----
 
-GPU 에 Tensor를 생성하는 방법
+### GPU 에 Tensor를  원하는 위치에 (GPU에) 생성하는 방법
+
 
 GPU의 경우 처음부터 cuda:0 ~ cuda:7 과 같이 일련번호를 받음.
 
@@ -34,8 +35,30 @@ x.cuda(device=dev)
 ```
 
 단 여기서 편의상 이동이라고 표현했지만, 기본적으로는 모든 애들이 복사가 됨.
-따라서, 위 명령어를 실행시켜도 `x.device` 를 찍어보면 type = cpu 로 나옴을 확인 할 수 있다.
+따라서, 위 명령어를 실행시켜도 `x.device` 를 찍어보면 type = cpu 로 나옴을 확인 할 수 있다. 하지만 가장 많이 사용하는 방법은 to 를 사용하는 방법이다. (이름 자체가 좀 더 직관적)
 
 
 4) to 를 사용해서 이동시키기
-5)
+
+```python
+x.to(device=dev)
+```
+
+
+
+---- 
+
+
+### model 자체를 move 하는 방법
+
+
+```python
+linear = nn.Linear(2,2)
+linear.cuda()
+```
+
+요렇게 모델을 `cuda()`로 보낼 때에는 복사가 아니라 이동이 된다.  마찬가지로
+
+```python
+linear.to(dev)
+```
