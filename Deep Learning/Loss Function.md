@@ -30,8 +30,7 @@ pytorch 에서는 MSE를 구현할 수 도 있지만, 왠만하면 미리 정의
 직접 구현하는 방법
 
 ```python
-
 def mse(y_hat, y):
 	return ((y_hat - y)**2).mean()
-
 ```
+
