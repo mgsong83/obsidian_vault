@@ -49,7 +49,30 @@ y = linear(x)
 ```
 
 하지만 이렇게 클래스를 만들어도 실제로는 사용이 불가능하다. 
+왜냐하면 파라메터 등록이 안되어있기 때문, 이를 확인해보기 위해서 아래와 같이 확인해보면 아무것도 출력이 되지 않는다. 
+
+![[Pasted image 20240611164421.png]]
 
 
-왜냐하면 파라메터 등록이 안되어있기 때문, 이를 확인해보기 위해서
+Trainable 한 파라메터를 등록하기 위해서는 다음처럼 등록을 해줘야 한다.
+```python
+import torch.nn as nn
 
+class MyLinear(nn.Module):
+	def __init__(self, input_dim=3, output_dim=2):
+		self.input_dim = input_dim
+		self.output_dim = output_dim
+		super().__init__()
+
+		self.W = nn.Parameter(torch.FloatTensor(input_dim, output_dim))
+		self.b = nn.Parameter(torch.FloatTensor(output_dim))
+
+	def forward(self, x):
+		y = torch.matmul(x, self.W) + self.b
+		return y
+
+
+
+```
+\
+ 위 라인 9, 10과 같이 학습이 가능한 (변동 가능한) 파라메터를 `nn.`
