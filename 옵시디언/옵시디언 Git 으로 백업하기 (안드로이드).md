@@ -44,12 +44,17 @@ cd ~/storage/shared/<원하는 디렉토리>
 git clone <내 Repo 이름>
 ```
 
-단, 현재버전에서는 
 
+단, 현재 버전에서는 아래와 같이 https auth 를 진행할 수 없기 때문에 (gh 로는 또 된다는 [포스트](https://forum.obsidian.md/t/guide-using-git-to-sync-your-obsidian-vault-on-android-devices/41887)도 있었으나, 해보지는 않음) 
 
-2. Git Hub 에서 personal token  을 발급한다.
+![[Pasted image 20240618175020.png]]
+
+ https 로 이루어진 git 프로토콜을 써야한다.
+ 
+5. Git Hub 에서 personal token  을 발급한다. (인증을 위한 비밀번호)  
+
 ![[Pasted image 20240618170829.png]]
-
+  프로필 -> 설정 -> 개발자설정 -> Create Token 에서 설정할 수 있다. 이후 토큰ㅇ
 
 
 되는지 테스트 중...
