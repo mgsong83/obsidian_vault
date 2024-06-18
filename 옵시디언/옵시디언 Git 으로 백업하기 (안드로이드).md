@@ -54,10 +54,12 @@ git clone <내 Repo 이름>
 5. Git Hub 에서 personal token  을 발급한다. (인증을 위한 비밀번호)  
 
 ![[Pasted image 20240618170829.png]]
-  프로필 -> 설정 -> 개발자설정 -> Create Token 에서 설정할 수 있다. 이후 토큰의 유효기간은 무제한으로 (기본으로는 30일), 그리고 repo에 대한 모든 권한을 준 다음에 발급하고 나오는 Key pharse 를 잘 적어두도록 하자 
+  프로필 -> 설정 -> 개발자설정 -> Create Token 에서 설정할 수 있다. 이후 토큰의 유효기간은 무제한으로 (기본으로는 30일), 그리고 repo에 대한 모든 권한을 준 다음에 발급하고 나오는 Key pharse 를 잘 적어두도록 하자. (token 유형은 classic 으로 해야한다!)
 
 
-6. 
-
-되는지 테스트 중...
+ 6. 핸드폰에 obsidian 을 설치하고, 처음 시작시 open exisit folder 를 방금 clone 한 위치로 지정한다. 
+ 
+ 7. 커뮤니티 plug-in 을 사용함으로 바꾸고, Git 을 설치 & 사용함으로 설정
+ 
+ 8. 자동 백업항목에서 Commit / Push / Pull 시간을 각각 설정하고, Auth 항목에서 github 아이디와 token 정보를 입력한다. 
 
