@@ -20,6 +20,8 @@ pkg upgrade
 2
 
 
+3. Git Hub 에서 personal token  을 발급한다.
+![[Pasted image 20240618170829.png]]
 
 
 
