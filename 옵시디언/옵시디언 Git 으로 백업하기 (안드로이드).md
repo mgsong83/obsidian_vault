@@ -13,11 +13,10 @@ https://github.com/denolehov/obsidian-git 개발자 리포지토리에서 아래
 ![[Pasted image 20240618174517.png]]
 
 
+**핸드폰에서 Obisidan 동기화를 위해서는 다음의 것들이 필요하다!**
 
+Step-by-Step 으로 따라올 것.
 
-
-
-핸드폰의 경우 옵시디언을 좀 더 잘 쓰기 위해서는 여러가지 추가 설정이 필요하다.
 
 1. 먼저 git 설정을 위해 Termux 와 같이 안드로이드 폰 자체에서 Command line 사용이 가능한 터미널을 설치한다.
 
@@ -29,11 +28,26 @@ pkg update
 pkg upgrade
 ```
 
+3. termux 에서 안드로이드 내부 스토리지가 접속 가능하도록 설정한다. https://wiki.termux.com/wiki/Termux-setup-storage 
 
-3. termux 에서 안드로이드 내부 스토리지가 접속 가능하도록 
+```
+termux-setup-stroage
+```
+  
+이후 안드로이드 버전에 따라서 권한설정을 해줘야 할 수 있음 
 
 
-3. Git Hub 에서 personal token  을 발급한다.
+4. termux 의 다음의 위치로 가서 git repo 공간을 만들기
+
+``` 
+cd ~/storage/shared/<원하는 디렉토리>
+git clone <내 Repo 이름>
+```
+
+단, 현재버전에서는 
+
+
+2. Git Hub 에서 personal token  을 발급한다.
 ![[Pasted image 20240618170829.png]]
 
 
