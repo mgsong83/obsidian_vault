@@ -126,11 +126,10 @@ mixed - 파일을 삭제하진 않지만 unstage 시킴 (일방적으로 선호�
 
 amend 를 할 수 있다 :
 
-`amend` : **가장 마지막 커밋*을 수정
+`amend` : **가장 마지막 커밋**을 수정
 \
 
 `git commit --amend --no-edit`  : 메세지 없이 수정 사항만 반영
-
 
 
 ----
