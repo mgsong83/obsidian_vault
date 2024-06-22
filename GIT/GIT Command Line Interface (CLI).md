@@ -60,6 +60,27 @@ reset을 해서 origin  과 local 이 다른 경우
 `git pull origin master`  을 한 경우 코드 충돌이 나기 때문에 conflict 를 풀어주고 커밋한 뒤에 푸쉬를 해야함
 
 
+`git reset HEAD^^ --soft`  : 섞이지 않고 리셋하고 싶을 때 사용
+
+
+**정리 
+
+hard - 파일을 삭제 
+soft - 파일을 남김
+mixed - 파일을 삭제하진 않지만 unstage 시킴 (일방적으로 선호됨)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
