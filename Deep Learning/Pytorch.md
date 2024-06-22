@@ -4,8 +4,6 @@
 [[Pytorch GPU 사용 방법]]
 
 
-
-
 ----
 
 ```python

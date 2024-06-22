@@ -86,13 +86,8 @@ p.device
 
 
 ```python
-
 x.torch.cuda.FloatTensor(2,2)
-
 x2 = x.new(3,2) #x 와 같은 타입/ 같은 위치에 있으면서 3, 2 사이즈를 가지는 텐서 생성
-
 x3 = torch.zeros_like(x) # x 와 같은 타입/ 같은 위치에 있는 2,2 사이즈 0 텐서 생성
-
 x4 = torch.ones_like(x) # 위와 마찬가지면서 모든 elements 가 1인 텐서 생성
-
 ```
