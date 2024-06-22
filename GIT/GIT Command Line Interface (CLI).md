@@ -70,6 +70,21 @@ soft - 파일을 남김
 mixed - 파일을 삭제하진 않지만 unstage 시킴 (일방적으로 선호됨)
 
 
+ 
+---- 
+
+`git log` 에서 돌아가고 싶은 상태의 hash를 기억하고 다음의 명령어를 사용해서 돌아갈 수 있음
+
+`git checkout #hash#`
+
+단 이렇게 돌아가면 detached HEAD 상태가 됨, 다시 돌아가기 위해서 
+
+`git checkout master `
+
+로 돌아갈 수 있음
+
+
+
 
 
 
