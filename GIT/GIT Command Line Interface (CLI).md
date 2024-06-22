@@ -77,7 +77,7 @@ mixed - 파일을 삭제하진 않지만 unstage 시킴 (일방적으로 선호�
 
 `git checkout #hash#`
 
-단 이렇게 돌아가면 detached HEAD 상태가 됨, 다시 돌아가기 위해서 
+단 이렇게 돌아가면 detached HEAD 상태가 됨(여기서 무언가를 고쳐도 미래가 영향받지 않게 하기 위해서..) 다시 돌아가기 위해서는
 
 `git checkout master `
 
@@ -95,12 +95,22 @@ mixed - 파일을 삭제하진 않지만 unstage 시킴 (일방적으로 선호�
 
 1. `git log` 로 과거로 돌아가고 싶은 시점 확인
 2. `git checkout ###` 으로 돌아가기 (Detach 됨)
-3. `git checkout -b new-branch-name` 
+3. `git checkout -b new-branch-name` 으로 새 브런치 따기 (새로운 브랜치에 합류)
+
+
+이걸 간단하게 한줄로
+
+`git checkout #### -b NAME`  으로 할 수 도 있음
+
+
+----
 
 
 
 
 
+
++
 
 
 
