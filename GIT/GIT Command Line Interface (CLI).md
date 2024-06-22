@@ -106,11 +106,23 @@ mixed - 파일을 삭제하진 않지만 unstage 시킴 (일방적으로 선호�
 ----
 
 
+브랜치 삭제
+
+`git branch -d NAME`
 
 
 
 
-+
+----
+
+이미 올린 커밋 수정하는 방법 (파일을 추가해야하거나, 메세지 수정해야할 때)
+
+
+
+1. `git add .`
+2. `git commit -m 'wrong version'`
+3. 
+
 
 
 
