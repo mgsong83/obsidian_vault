@@ -118,10 +118,30 @@ mixed - 파일을 삭제하진 않지만 unstage 시킴 (일방적으로 선호�
 이미 올린 커밋 수정하는 방법 (파일을 추가해야하거나, 메세지 수정해야할 때)
 
 
-
 1. `git add .`
 2. `git commit -m 'wrong version'`
-3. 
+3. `git push origin master`
+
+와 같이 이미 커밋 후 푸쉬까지 한 경우 수정이 필요한 경우
+
+amend 를 할 수 있다 :
+
+`amend` : **가장 마지막 커밋*을 수정
+\
+
+`git commit --amend --no-edit`  : 메세지 없이 수정 사항만 반영
+
+
+
+----
+
+`git status` : git 관리중인 파일들의 stage 레벨에서 차이를 확인
+
+
+
+
+
+
 
 
 
