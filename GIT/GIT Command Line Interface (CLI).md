@@ -84,9 +84,18 @@ mixed - 파일을 삭제하진 않지만 unstage 시킴 (일방적으로 선호�
 로 돌아갈 수 있음
 
 
+`git checkout -b NAME` : branch 를 만들기
 
 
+`git branch` 로 만들어진 branch 확인 가능
 
+----
+
+따라서 과거로 돌아가서 새로운 브랜치를 따고 싶다면
+
+1. `git log` 로 과거로 돌아가고 싶은 시점 확인
+2. `git checkout ###` 으로 돌아가기 (Detach 됨)
+3. `git checkout -b new-branch-name` 
 
 
 
