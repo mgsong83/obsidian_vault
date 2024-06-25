@@ -11,6 +11,20 @@ Fork 한 뒤에 내가 고치는 동안 Base repository 가 업데이트 된다�
 [[gitignore]]
 
 
-커맨드라인에서 git 활용하기
+커맨드 라인에서 git 활용하기
 
 [[GIT Command Line Interface (CLI)]]
+
+
+
+---- 
+
+GitHub  : 가장 흔히 사용됨
+BitBucket GitHub과 다른 UI, Board 관리가 매력적
+GitLab : Privite repository가 가장 매력적이었는데 이제 GitHub 도 privite 이 가능해서 매력이 떨어짐
+
+GitHub 이 마이크로소프트에 인수된 뒤에 일종의 Standard로 사용되고 있음.
+
+
+
+

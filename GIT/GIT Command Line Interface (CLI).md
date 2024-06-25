@@ -136,7 +136,6 @@ amend 를 할 수 있다 :
 
 `git status` : git 관리중인 파일들의 stage 레벨에서 차이를 확인
 
-
 `git remote -v` : 외부 저장소 리스트로 보기
 
 `git removte add qq urls `
@@ -145,7 +144,9 @@ amend 를 할 수 있다 :
 
 `git remote remove qq`  하면 qq 가 지워진다.
 
-`git push "remote name" "branch name"`  이게 푸쉬 하는 기본적인 
+`git push "remote name" "branch name"`  이게 푸쉬 하는 기본적인 문법이다.
+
+
 
 
 
