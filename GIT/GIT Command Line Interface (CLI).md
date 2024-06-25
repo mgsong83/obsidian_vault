@@ -164,11 +164,6 @@ git clone  (github 의 fork 의 원래 버전 )
 ----
 
 
-Git Hub 에서의 Workflow
-
-
-공통의 프로젝트에 참가한 경우 그대로 사용
-
 
 
 
