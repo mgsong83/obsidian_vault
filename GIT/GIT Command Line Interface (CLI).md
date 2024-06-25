@@ -150,7 +150,14 @@ amend 를 할 수 있다 :
 
 
 
+----
 
+
+git clone  (github 의 fork 의 원래 버전 )
+
+
+
+git clone url
 
 
 
