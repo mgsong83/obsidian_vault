@@ -155,9 +155,28 @@ amend 를 할 수 있다 :
 
 git clone  (github 의 fork 의 원래 버전 )
 
+`git clone url folder_name`
+
+(github 에서는 다른 사람의 코드를 folk 없이 clone 하면 권한이 없으므로 download는 가능하지만 upload는 불가)
 
 
-git clone url
+
+----
+
+
+Git Hub 에서의 Workflow
+
+
+공통의 프로젝트에 참가한 경우 그대로 사용
+
+
+
+
+
+
+
+
+
 
 
 
