@@ -21,9 +21,16 @@ Activation Layer 를 넣어줘서 비선형성도 채워줄 수 있음
 Loss 가 작아지는 원리  \<Back Propagation\>
 
 우리의 목적 :  주어진 데이터와 출력이 똑같은 함수를 만드는 것 
-            --> 출력이 같다 = Loss 가 0 이다. [[Loss Function]]
-            
-        
+			-> 출력이 같다 = Loss 가 0 이다. [[Loss Function]]
+			
+			
+현재 Loss function 을 만드는  $\theta_t$  (Weight, bias) 를 업데이트 하여 더 나은 $\theta_{t+1}$ 로 가자.
+
+
+Deep Learning 함수가 동작하는 방법
+: Xi 를 넣어서 Yi 를 구하고, 
+
+\      
 
 
 
