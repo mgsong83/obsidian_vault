@@ -61,6 +61,9 @@ Gradiant Vanishing --> Activation Function 때문에 발생
 
 
 
+
+
+
 ---- 
 
 
