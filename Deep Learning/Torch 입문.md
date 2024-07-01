@@ -42,7 +42,23 @@ $$
 	\frac{\partial{y}}{\partial{x}} = \frac{\partial{y}}{\partial{h}} \frac{\partial{h}}{\partial{x}}
 $$
 
-가장 마지막부터 계산한 값을 다시 재활용함. (Backw)
+loss를 구할 때는 가장 마지막부터 계산한 값을 다시 재활용함. `loss.backward`
+실제로 x를 넣어서 y를 구함 `forward()` : feed forward
+
+
+과거의 딥러닝은 feed forward 를 만들고, 그것에 대한 미분식을 만들어서 c++등으로 구현하였음
+-> 현재는 프레임 워크에서 AutoGrad 같은 기능으로 자동 미분 수행
+(Tensorflow 에서 complie 하는 순간 미분식이 만들어짐)
+
+
+---- 
+
+
+
+
+
+
+
 
 
 
