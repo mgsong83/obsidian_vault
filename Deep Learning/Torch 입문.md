@@ -30,7 +30,15 @@ Loss 가 작아지는 원리  \<Back Propagation\>
 Deep Learning 함수가 동작하는 방법
 : Xi 를 넣어서 Yi 를 구하고, 실제 Y 와 비교하여 Loss 를 구한다.
 
-나의 Loss 에 영향을 주는 애 :  $\hat_y$
+나의 Loss 에 영향을 주는 애 :  $\hat{y}$  <- 에 영향을 주는 애들 을 미분하여 영향력을 확인
+
+미분을 다른 변수들의 미분의 곱으로 표현함 (체인룰)
+
+$$
+	\frac{\partial{y}}{\partial{x}} = \frac{\partial{y}}{\partial{h}} \frac{\partial{h}}{\partial{x}}
+$$
+
+
 
 
 
