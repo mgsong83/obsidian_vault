@@ -15,3 +15,17 @@ Activation Layer 를 넣어줘서 비선형성도 채워줄 수 있음
 
 
 
+---- 
+
+
+Loss 가 작아지는 원리  \<Back Propagation\>
+
+우리의 목적 :  주어진 데이터와 출력이 똑같은 함수를 만드는 것 
+            --> 출력이 같다 = Loss 가 0 이다. [[Loss Function]]
+            
+        
+
+
+
+
+
