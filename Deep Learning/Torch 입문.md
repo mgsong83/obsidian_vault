@@ -51,6 +51,16 @@ loss를 구할 때는 가장 마지막부터 계산한 값을 다시 재활용�
 (Tensorflow 에서 complie 하는 순간 미분식이 만들어짐)
 
 
+
+Gradiant Vanishing --> Activation Function 때문에 발생
+
+주로 사용되었던 Activation Function 은 Sigmoid 또는 TanH  => 모든 값에서 1보다 작거나 같다. 
+출력단에서 멀리 있는 애들은 업데이트가 거의 안됨. (깊게 쌓아봤자 영향을 미치는 애들은 한정적)
+
+
+
+
+
 ---- 
 
 
