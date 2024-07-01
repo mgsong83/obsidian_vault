@@ -28,9 +28,25 @@ Loss 가 작아지는 원리  \<Back Propagation\>
 
 
 Deep Learning 함수가 동작하는 방법
-: Xi 를 넣어서 Yi 를 구하고, 
+: Xi 를 넣어서 Yi 를 구하고, 실제 Y 와 비교하여 Loss 를 구한다.
+
+나의 Loss 에 영향을 주는 애 :  $\hat_y$
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \      
+
 
 
 
