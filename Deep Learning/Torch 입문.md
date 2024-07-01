@@ -33,11 +33,16 @@ Deep Learning 함수가 동작하는 방법
 나의 Loss 에 영향을 주는 애 :  $\hat{y}$  <- 에 영향을 주는 애들 을 미분하여 영향력을 확인
 (여기까지는 Back Propagation 과 관계없음-> 하지만 되게 어려움. 깊은 모델에서 학습이 사실상 불가능)
 
+각 Layer 에서 Weight 들을 W1, W2, W3 라고 할 때
+가장 마지막에서 구해놓은 영향력 (미분값)을 계속해서 재활용 할 수 있음!
+
 미분을 다른 변수들의 미분의 곱으로 표현함 (체인룰)
 
 $$
 	\frac{\partial{y}}{\partial{x}} = \frac{\partial{y}}{\partial{h}} \frac{\partial{h}}{\partial{x}}
 $$
+
+가장 마지막부터 계산한 값을 다시 재활용함. (Backw)
 
 
 
